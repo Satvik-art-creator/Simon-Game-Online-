@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+h1{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+.highScore{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+h4{
+    margin: 10px 0;
+}
+
+ul{
+    margin: 0 auto;
+    width: fit-content;
+    border: 1px solid #000;
+    list-style-type: none;
+    padding: 10px;
+}
+
+ul h2{
+    text-decoration: underline double;
+}
+
+ul li{
+    font-size: 0.8rem;
+}
+
+main{
+    display: grid;
+    grid-template-rows: repeat(2, 280px);
+    grid-template-columns: repeat(2, 280px);
+    margin-top: 15px;
+    justify-content: center;
+}
+
+main div.box{
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;  
+    border-radius: 25%;
+    border: 10px solid #000;
+    cursor: default;
+}
+
+main div:nth-of-type(1){
+    background-color: #00BFFF
+}
+
+main div:nth-of-type(2){
+    background-color: #FF6F61;
+}
+
+main div:nth-of-type(3){
+    background-color: 	#B57EDC;
+}
+
+main div:nth-of-type(4){
+    background-color: #98FF98;
+    transition: display 0.5s ease-in;
+}
+
+main div:nth-of-type(5){
+    background-color: #F4C542;
+    transition: display 0.5s ease-in;
+}
+
+main div:nth-of-type(6){
+    background-color: #FF4C4C;
+}
+
+.box4{
+    display: none;
+}
+.box5{
+    display: none;
+}
+
+
+main div.flash{
+    background-color: #fff;
+}
+
+main div.userFlash{
+    background-color: #FCE762;
+}
